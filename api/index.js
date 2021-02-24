@@ -52,8 +52,6 @@ var cache = (duration) => {
 const parseItemList = data => {
 let itemList = [];
 
-
-
 data.results.map(i => {
   itemList.push({
     id: i.id,
