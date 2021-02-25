@@ -1,15 +1,60 @@
 .searchBar {
     background-color: #FFF159;   
     color: #736c28; 
+    text-align: center;
+    overflow: hidden;
+    font-family: "Roboto";
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+    box-sizing: border-box;
 }
 
 .text {
     color: #736c28; 
     text-decoration:none;
+    font-family: "OpenSans";
+    float: left;
+    margin-left: 40px;
     
+}
+
+.navLogo {
+    margin-left: 0px;
+    
+}
+
+.img{
+    display: flex;
+    justify-content: start;
 }
 
 
 .cart {
     color: #736c28; 
+    float: right;
+    margin-right: 10px;    
 }
+
+.form {
+    overflow: hidden;
+    padding: 1rem;
+    display: flex;
+    justify-content: center;
+    width: -webkit-fill-available;    
+}
+
+.input {
+    height: 2.5rem;
+    width: -webkit-fill-available;    
+    margin-left: 5px;    
+}
+
+.buttonSubmit {
+    height: 2.5rem;
+    margin-right: 20px;  
+   
+}
+
+
