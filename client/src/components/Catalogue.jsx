@@ -1,7 +1,9 @@
 import ProductCard from "./ProductCard";
-
+import s from './Styles/Catalogue.module.css';
 
 function Catalogue({ products, addToCart, error }) {
+
+    
   return (
     <div>
       {error ? (
@@ -11,7 +13,7 @@ function Catalogue({ products, addToCart, error }) {
           <img ></img>
         </div>
       ) : (
-        <div>
+        <div className={s.catalogue}>
           {products.map((product) => {
             return (
               <ProductCard

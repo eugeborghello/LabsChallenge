@@ -1,0 +1,29 @@
+.paginationContainer {
+    display: flex;
+    justify-content: center;
+    margin-right: 3.5rem;
+}
+
+.pageList {
+    text-decoration: none;
+    list-style: none;
+    float: left;
+    color: black;
+    margin: 0.5rem;
+    padding: 0.48rem 0.96rem;
+    background-color: #ddd;
+    border-radius: 0.6rem;
+    border: none;
+  
+}
+
+.pageList a:active {
+    background-color: #4caf50;
+    color: white;
+    border-radius: 0.3rem;
+  }
+
+  .pageList :hover {
+     border-radius: 0.3rem;
+     cursor: pointer;
+  }

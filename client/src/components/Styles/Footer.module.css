@@ -1,0 +1,63 @@
+.footerContainer {
+    margin-top: 15rem;
+    
+}
+
+.footer {
+    display: flex;
+    padding-top: 1rem;
+    width: 100%;
+    color: grey;
+    text-align: center;
+    font-family: "Roboto";
+    justify-content: space-around;
+    
+  }
+  .usedTechnologies {
+    display: flex;
+    align-items: center;
+    width: 60rem;
+    padding-left: 2rem;
+  }
+  .list {
+    display: flex;
+    justify-content: center;
+    padding-left: 2rem;
+    width: 15rem;
+    ul {
+      padding-left: 1rem;
+      width: 8rem;
+      font-family: "Roboto";
+      font-size: 1.2rem;
+      li {
+        text-align: left;
+        white-space: nowrap;
+      }
+    }
+  }
+  .container1 {
+    flex-direction: column;
+    width: 30rem;
+  }
+  .infoDevs {
+    display: grid;
+    align-items: center;
+    flex-grow: 2;
+    margin: 1rem;
+    div {
+      padding-left: 1rem;
+    }
+    img {
+      width: 2rem;
+    }
+  }
+  .us {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: "Roboto";
+    font-size: 1.5rem;
+    img {
+      margin: 1rem;
+    }
+  }

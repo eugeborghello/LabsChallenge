@@ -27,7 +27,7 @@
 
 .img{
     display: flex;
-    justify-content: start;
+    justify-content: flex-start;
 }
 
 
@@ -41,8 +41,9 @@
     overflow: hidden;
     padding: 1rem;
     display: flex;
-    justify-content: center;
-    width: -webkit-fill-available;    
+    justify-content: flex-end;
+    /* width: -webkit-fill-available;     */
+    width: 30rem;
 }
 
 .input {

@@ -1,4 +1,4 @@
-
+import s from './Styles/Pagination.module.css';
 
 const Pagination = ({ productsPerPage, totalProducts, paginate }) => {
   const pageNumbers = [];
@@ -8,12 +8,13 @@ const Pagination = ({ productsPerPage, totalProducts, paginate }) => {
   }
 
   return (
-    <div>
-      <nav>
+    <div className={s.paginationContainer}>
+      
+      <nav >
         <ul>
-          {pageNumbers.map((number) => (
-            <button
-              className="page-list"
+         {pageNumbers.map((number) => (
+            <button className={s.pageList}
+              
               onClick={() => paginate(number)}
               key={number}
             >
@@ -29,3 +30,5 @@ const Pagination = ({ productsPerPage, totalProducts, paginate }) => {
 };
 
 export default Pagination;
+
+

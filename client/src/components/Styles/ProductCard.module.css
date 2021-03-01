@@ -1,0 +1,97 @@
+.cardContainer{
+    display: flex;
+    flex-direction: column;
+        
+}
+
+.card {
+    display: flex;
+    padding: 10px 3px 20px;
+    border-radius: 0.5rem;
+    margin: 2rem;
+    flex-direction: column;
+    border: 0.1rem solid #ddd;
+    box-shadow: 0.3rem 0.3rem 0.5rem #aaa;
+    transition: transform 0.5s;
+    width: 18rem;
+    height: 28rem;
+    background-color: white;
+   
+  }
+
+.cardBody {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    height: 15rem;    
+    background-color: white;
+   
+  }  
+
+.cardTitle {
+    display: flex;
+    text-align: center;
+    padding: 0.2rem;
+  }
+
+.card:hover {
+    transform: scale(1.1);
+  }
+
+.cardText {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    margin-block-end: 0.5em;
+    
+    
+  }
+
+.cardImg {
+    display: flex;
+    justify-content: center;
+    margin: auto;
+    width: 12rem;
+    padding-top: 2rem;
+    cursor: pointer;
+    background-color: white;
+  }
+
+.buttonAdd {
+    border-radius: 0.24rem;
+    background-color: #6495ed;
+    border: none;
+    color: #ffffff;
+    text-align: center;
+    font-size: 0.6rem;
+    padding: 0.6rem;
+    width: 6rem;
+    transition: all 0.5s;
+    cursor: pointer;
+    
+  }
+
+.buttonAdd span {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+  }
+
+.buttonAdd span:after {
+    content: "\0bb";
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -1.2rem;
+    transition: 0.5s;
+  }
+
+.buttonAdd:hover span {
+    padding-right: 0.9rem;
+  }
+  
+.buttonAdd:hover span:after {
+    opacity: 1;
+    right: 0;
+  }

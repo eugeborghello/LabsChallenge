@@ -1,68 +1,60 @@
-import { makeStyles } from '@material-ui/core/styles';
-import Card from '@material-ui/core/Card';
-import CardActionArea from '@material-ui/core/CardActionArea';
-import CardActions from '@material-ui/core/CardActions';
-import CardContent from '@material-ui/core/CardContent';
-import CardMedia from '@material-ui/core/CardMedia';
-import Button from '@material-ui/core/Button';
-import Typography from '@material-ui/core/Typography';
+import React from 'react';
+
+import s from './Styles/ProductCard.module.css';
 
 const ProductCard = (props) => {
 
-  // const useStyles = makeStyles({
-  //   root: {
-  //     maxWidth: 345,
-  //   },
-  // });
-
-  // function ImgMediaCard() {
-  //   const classes = useStyles();
-  // }
-
+  
   return (
     
      
-      <Card maxWidth="xs">
-        <CardActionArea>
+      <div className={s.cardContainer}>
+        <div className={s.card}>
         
-        <CardMedia
+        <img
             component="img"
             src={props.thumbnail}
             alt="thumbnail"
+            className={s.cardImg}
+            width="20%" 
+            height="20%"
             
-            onClick={() => window.open(props.permalink, "_blank")}
+            
         />
         
-        <CardContent>
-          <Typography gutterBottom variant="h5" component="h2">
-            
-           {props.title}
-           </Typography>
-           <Typography variant="body2" color="textSecondary" component="p">
-            
-              {/* <b>Price</b>: $ {Intl.NumberFormat("de-DE").format(props.price)}{" "} */}
-              {props.currency_id}
-            
-            </Typography>
-          
-
-            <p className="card-text">
-              <b>Condition</b>: {props.condition}
+        <div className={s.cardBody}>
+          <div className={s.cardTitle} gutterBottom variant="h5" component="h2">
+            {props.title}
+           </div>
+          <div className={s.cardBody} variant="body2" color="textSecondary" component="p">
+            <p className={s.cardText}>
+              <b>Price</b>: ${Intl.NumberFormat("de-DE").format(props.price)}{" "} 
             </p>
-            <p className="card-text">
+
+            <p className={s.cardText}>
+              <b>Condition </b>: {props.condition}
+            </p>
+            
+            <p className={s.cardText}>
               <b>Stock</b>: {props.available_quantity}
             </p>
-        </CardContent>
+          </div>
           
-            <button className="buttonAdd" onClick={() => props.addToCart()}>
+            <button className={s.buttonAdd} onClick={() => props.addToCart()}>
               <span>Add To Cart</span>
             </button>
           
-        
-          </CardActionArea>
-        </Card>
+            </div>
+          </div>
+        </div>
+
+      
+      
     
   );
 };
 
+
 export default ProductCard;
+
+

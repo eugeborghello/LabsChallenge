@@ -1,10 +1,10 @@
-
+import s from './Styles/Cart.module.css'
 
 const Cart = ({ cartItems, removeFromCart }) => {
   return (
-    <div>
-      <div className="test">
-        <div className="empty">
+    <div className={s.cartContainer}>
+      <div className={s.test}>
+        <div className={s.empty}>
           {cartItems.length === 0 ? (
             <div>Cart is empty</div>
           ) : (
@@ -14,7 +14,7 @@ const Cart = ({ cartItems, removeFromCart }) => {
         <div>
           <br />
           {cartItems.length !== 0 && (
-            <div className="total">
+            <div className={s.total}>
               Total: ${" "}
               {Intl.NumberFormat("de-DE").format(
                 cartItems.reduce(
@@ -27,14 +27,19 @@ const Cart = ({ cartItems, removeFromCart }) => {
           )}
           <br />
           {cartItems.length > 0 ? (
-            <div className="scroll">
+            <div className={s.scroll}>
               <ul>
                 {cartItems.map((item) => (
-                  <li className="product-cart" key={item.id}>
-                    <img src={item.thumbnail} alt={item.title}></img>
+                  <li className={s.productCart} key={item.id}>
+                    <img 
+                      className={s.img} 
+                      src={item.thumbnail} 
+                      alt={item.title}>
 
-                    <div className="infoDiv">
-                      <div className="info-text">
+                    </img>
+
+                    <div className={s.infoDiv}>
+                      <div className={s.infoText}>
                         <div>Quantity: {item.count}</div>
                         <div>
                           Price: ${" "}
@@ -49,7 +54,7 @@ const Cart = ({ cartItems, removeFromCart }) => {
                           {item.currency_id}
                         </div>
                       </div>
-                      <div className="button-remove">
+                      <div className={s.buttonRemove}>
                         <button onClick={() => removeFromCart(item)}>
                           Remove
                         </button>

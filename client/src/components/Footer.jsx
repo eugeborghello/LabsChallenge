@@ -1,33 +1,34 @@
+import s from './Styles/Footer.module.css'
 
 function Footer() {
   return (
-    <div>
-      <div className="footer">
-        <div className="used-technologies">
-          <b>Herramientas utilizadas:</b>
+    <div className={s.footerContainer}>
+      <div className={s.footer}>
+        <div className={s.usedTechnologies}>
+          <p>Herramientas utilizadas:</p>
           <div className="list">
             <ul>
               <li>React</li>
               <li>Axios</li>
             </ul>
           </div>
-          <div className="list">
+          <div className={s.list}>
             <ul>
               <li>Express</li>
               <li>NodeJS</li>
               
             </ul>
           </div>
-          <div className="list">
+          <div className={s.list}>
             <ul>
               <li>Material-UI</li>
             </ul>
           </div>
         </div>
-        <div className="container1">
-          <div className="info-devs">
-            <b>Trabajo realizado por: </b>
-            <div className="us">
+        <div className={s.container1}>
+          <div className={s.infoDevs}>
+            <p>Trabajo realizado por: </p>
+            <div className={s.us}>
               María Eugenia Borghello
               <a >
                 <img  />

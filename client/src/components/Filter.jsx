@@ -10,19 +10,7 @@ function Filter(props) {
     <div>
       <div className="all">
         <div className="order">
-        {/* <FormControl >
-          <InputLabel id="demo-simple-select-helper-label">Price</InputLabel>
-            <Select
-              labelId="demo-simple-select-helper-label"
-              id="demo-simple-select-helper"
-              value={props.sort}
-              onChange={props.sortProducts}
-            >
-              <MenuItem>Lowest</MenuItem>
-              <MenuItem>Highest</MenuItem>
-              
-            </Select>
-        </FormControl> */}
+        
           <select value={props.sort} onChange={props.sortProducts}>
             <option value="price">Price</option>
             <option value="lowest">Lowest</option>
@@ -31,19 +19,7 @@ function Filter(props) {
           
         </div>
         <div className="order">
-        {/* <FormControl >
-          <InputLabel id="demo-simple-select-helper-label">Condition</InputLabel>
-            <Select
-              labelId="demo-simple-select-helper-label"
-              id="demo-simple-select-helper"
-              value={props.condition}
-              onChange={props.filterProducts}
-            >
-              <MenuItem>New</MenuItem>
-              <MenuItem>Used</MenuItem>
-              
-            </Select>
-        </FormControl> */}
+        
           <select value={props.condition} onChange={props.filterProducts}>
             <option>Condition</option>
             <option value="new">New</option>

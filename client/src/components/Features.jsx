@@ -25,7 +25,7 @@ function Features() {
 
   // Pagination ----------------------------------------->
   const [currentPage, setCurrentPage] = useState(1);
-  const [productsPerPage] = useState(12);
+  const [productsPerPage] = useState(4);
 
   const indexOfLastProduct = currentPage * productsPerPage;
   const indexOfFirsProduct = indexOfLastProduct - productsPerPage;
@@ -120,6 +120,7 @@ function Features() {
     setCartItems(itemsCart.filter((x) => x.id !== product.id));
   };
 
+
   return (
     <div>
       <div>
@@ -139,12 +140,7 @@ function Features() {
         
         <div className="content">
           <div className="main">
-            <Pagination
-              productsPerPage={productsPerPage}
-              totalProducts={products.length}
-              paginate={paginate}
-              key={"#"}
-            />
+           
             <Catalogue
               products={currentProducts}
               addToCart={addToCart}
@@ -157,6 +153,12 @@ function Features() {
               key={paginate}
             /> */}
           </div>
+          <Pagination
+              productsPerPage={productsPerPage}
+              totalProducts={products.length}
+              paginate={paginate}
+              key={"#"}
+            />
           <div className="sidebar">
             <Cart cartItems={cartItems} removeFromCart={removeFromCart} />
           </div>

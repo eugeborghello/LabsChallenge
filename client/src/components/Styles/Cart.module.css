@@ -1,0 +1,55 @@
+.cartContainer {
+    font-family: Roboto;
+    margin-top: 40px;    
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    
+}
+
+.test {
+    
+    top: 1rem;
+}
+
+.productCart {
+    display: flex;
+    padding-bottom: 3rem;
+    list-style-type: none;
+    
+}
+
+img {
+    margin: auto;
+    width: 6.25rem;
+}
+
+.infoDiv {
+    display: flex;
+    padding-left: 0.6rem;
+    align-items: center;
+    justify-content: center;
+    font-size: 1rem;
+    
+}
+
+.buttonRemove {
+    padding-left: 1.5rem;
+    padding-right: 2rem;
+}
+
+.total {
+    font-size: 1.5rem;
+}
+
+.empty {
+    font-size: 1.5rem;
+}
+
+.scroll {
+    /* Barra deslizable */
+    overflow-y: scroll;
+    overflow-x: hidden;
+    height: 45rem;
+  }
+
