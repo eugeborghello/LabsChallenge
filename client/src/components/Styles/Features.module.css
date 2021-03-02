@@ -1,0 +1,36 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    font-family: "Roboto";
+  }
+
+.main {
+    flex: 3 36rem;   
+}
+
+.cart {
+    display: flex;
+    border-top: 2rem;
+}
+
+.filterCategories {
+    display: flex;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}    
+
+.pagination {
+    z-index: -10rem;
+}
+  
+.footer {
+      margin-top: -10rem;
+}
+
+  

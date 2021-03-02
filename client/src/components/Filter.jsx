@@ -1,15 +1,11 @@
 import { makeStyles } from '@material-ui/core/styles';
-import InputLabel from '@material-ui/core/InputLabel';
-import MenuItem from '@material-ui/core/MenuItem';
-import FormHelperText from '@material-ui/core/FormHelperText';
-import FormControl from '@material-ui/core/FormControl';
-import Select from '@material-ui/core/Select';
+import s from './Styles/Filter.module.css';
 
 function Filter(props) {
   return (
-    <div>
-      <div className="all">
-        <div className="order">
+    <div className={s.filterContainer}>
+      <div className={s.all}>
+        <div className={s.order}>
         
           <select value={props.sort} onChange={props.sortProducts}>
             <option value="price">Price</option>
@@ -18,18 +14,18 @@ function Filter(props) {
           </select>
           
         </div>
-        <div className="order">
+        <div className={s.order}>
         
           <select value={props.condition} onChange={props.filterProducts}>
             <option>Condition</option>
             <option value="new">New</option>
             <option value="used">Used</option>
           </select>
-          <div className="results">
-            <div className="input">
+          <div className={s.results}>
+            <div className={s.input}>
               <b>{props.input}</b>
             </div>
-            <div className="result">{props.count} Results </div>
+            <div className={s.result}>{props.count} Results </div>
           </div>
         </div>
       </div>

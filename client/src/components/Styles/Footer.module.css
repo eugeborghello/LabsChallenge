@@ -13,12 +13,14 @@
     justify-content: space-around;
     
   }
+  
   .usedTechnologies {
     display: flex;
     align-items: center;
     width: 60rem;
     padding-left: 2rem;
   }
+
   .list {
     display: flex;
     justify-content: center;
@@ -35,10 +37,12 @@
       }
     }
   }
+
   .container1 {
     flex-direction: column;
     width: 30rem;
   }
+
   .infoDevs {
     display: grid;
     align-items: center;
@@ -51,8 +55,9 @@
       width: 2rem;
     }
   }
+
   .us {
-    display: flex;
+    display: grid;
     align-items: center;
     justify-content: center;
     font-family: "Roboto";

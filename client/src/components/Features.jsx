@@ -6,8 +6,8 @@ import axios from "axios";
 import Filter from "./Filter";
 import Pagination from "./Pagination";
 import Footer from "./Footer";
-//import Slides from "./Slides";
-import Categories from "./Categories";
+
+import s from './Styles/Features.module.css';
 
 function Features() {
   const [error, setError] = useState(false);
@@ -20,9 +20,7 @@ function Features() {
   const [condition, setCondition] = useState("");
   const [sort, setSort] = useState("");
 
-  // Categories ----------------------------------------->
-  const [categories, setCategories] = useState([]);
-
+ 
   // Pagination ----------------------------------------->
   const [currentPage, setCurrentPage] = useState(1);
   const [productsPerPage] = useState(4);
@@ -52,17 +50,7 @@ function Features() {
 
   };
 
-  const searchCat = () => {
-    axios
-      .get(`http://localhost:3001/api/categories`)
-      .then((categories) => {
-        setCategories(categories.data);
-      })
-      .catch((err) => {
-        console.log(err);
-      });
-  };
-
+  
   const sortProducts = (event) => {
     const sort = event.target.value;
     setSort(sort);
@@ -84,6 +72,8 @@ function Features() {
     );
   };
 
+
+  // Filter ----------------------------------------->
   const filterProducts = (event) => {
     let productCondition = event.target.value;
 
@@ -122,13 +112,12 @@ function Features() {
 
 
   return (
-    <div>
+    <div className={s.container}>
       <div>
         <SearchBar onSearch={onSearch} />
       </div>
       
-        <div className="Filter_Categories">
-          <Categories searchCat={searchCat} categories={categories} />
+        <div className={s.filterCategories}>
           <Filter
             count={products.length}
             sort={sort}
@@ -137,34 +126,36 @@ function Features() {
             filterProducts={filterProducts}
             input={input}
           />
+        </div>
         
-        <div className="content">
-          <div className="main">
+        <div className={s.content}>
+          <div className={s.main}>
+          
            
+          
+            
             <Catalogue
               products={currentProducts}
               addToCart={addToCart}
               error={error}
             />
-            {/* <Pagination
-              productsPerPage={productsPerPage}
-              totalProducts={products.length}
-              paginate={paginate}
-              key={paginate}
-            /> */}
-          </div>
-          <Pagination
+             <Pagination
               productsPerPage={productsPerPage}
               totalProducts={products.length}
               paginate={paginate}
               key={"#"}
             />
-          <div className="sidebar">
+          
+          </div>
+          
+          
+          <div className={s.cart}>
             <Cart cartItems={cartItems} removeFromCart={removeFromCart} />
           </div>
         </div>
-      </div>
-      <Footer />
+        <div className={s.footer}>
+            <Footer />
+        </div>
     </div>
   );
 }
