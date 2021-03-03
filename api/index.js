@@ -78,8 +78,9 @@ next();
 //nuestra función está para ser determinada en milisegundos, 
 //por ellos cuando sea llamada desde la ruta, deberá expresarse en el tiempo necesario.
 //Importante: los métodos PUT, DELETE y POST nunca se deben almacenar en caché.
+//guardé en caché durante 20 segundos
 
-app.get('/api/search', cache(10), (req, res) => {
+app.get('/api/search', cache(20), (req, res) => {
 const query = req.query.q;
 console.log('llego la query con valor:');
 console.log(req.query.q);

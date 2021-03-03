@@ -15,8 +15,9 @@ const Pagination = ({ productsPerPage, totalProducts, paginate }) => {
          {pageNumbers.map((number) => (
             <button className={s.pageList}
               
-              onClick={() => paginate(number)}
-              key={number}
+            onClick={(e) => {e.preventDefault(); paginate(number)}}
+              key={number} 
+              
             >
               <li key={number}>
                 {number}

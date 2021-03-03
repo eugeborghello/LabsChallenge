@@ -25,9 +25,11 @@
     
 }
 
-.img{
+.imgLogo{
     display: flex;
     justify-content: flex-start;
+    width: 10rem;
+    height: 20%;
 }
 
 

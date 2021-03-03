@@ -1,11 +1,11 @@
 import { useState } from "react";
 import { Link } from "react-router-dom";
-import { AppBar, Button, makeStyles, Toolbar, Typography } from '@material-ui/core';
 import s from './Styles/SearchBar.module.css';
 import logoML from '../assets/logoML.png'
 
 import ShoppingCartOutlinedIcon from '@material-ui/icons/ShoppingCartOutlined';
 
+//crear un formulario controlado con un input de búsqueda, que dispare los requests a la API (a nuestro BACK-END)
 
 function SearchBar({ onSearch }) {
   const [input, setInput] = useState("");
@@ -19,9 +19,7 @@ function SearchBar({ onSearch }) {
           <img  
                 id="logo" 
                 src={logoML} 
-                className={s.img} 
-                width="20%" 
-                height="20%" 
+                className={s.imgLogo} 
                 alt="" 
                 />
             

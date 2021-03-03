@@ -4,6 +4,14 @@ import s from './Styles/ProductCard.module.css';
 
 const ProductCard = (props) => {
 
+//En este componente se muestra un producto en particular, debemos mostrar:
+
+// su imagen.
+// su titulo.
+// su precio (con la moneda).
+// su condicion.
+// si tiene stock o no.
+
   
   return (
     

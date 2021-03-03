@@ -1,4 +1,5 @@
 import s from './Styles/Footer.module.css'
+import logoGithub from './Styles/img/logoGithub.png';
 
 function Footer() {
   return (
@@ -30,10 +31,11 @@ function Footer() {
             <p>Trabajo realizado por: </p>
             <div className={s.us}>
               María Eugenia Borghello
-              <a >
-                <img  />
               
-                <img  />
+              <a href="https://github.com/eugeborghello">
+                
+                <img className={s.imgGithub} src={logoGithub} alt="eugeborghello"/>
+                
               </a>
             </div>
             

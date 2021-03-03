@@ -3,6 +3,11 @@ import s from './Styles/Catalogue.module.css';
 
 function Catalogue({ products, addToCart, error }) {
 
+// Este componente va mostrar un arreglo de productos (obtenidos de la API) usando Product Card. Tambien debe posibilitar:
+
+// Poder ordenar los productos en base a su precio, de forma ascendete o descendente.
+// Poder filtrar por condicion.
+
     
   return (
     <div>

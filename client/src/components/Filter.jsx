@@ -1,4 +1,3 @@
-import { makeStyles } from '@material-ui/core/styles';
 import s from './Styles/Filter.module.css';
 
 function Filter(props) {

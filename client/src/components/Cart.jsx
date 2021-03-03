@@ -32,7 +32,7 @@ const Cart = ({ cartItems, removeFromCart }) => {
                 {cartItems.map((item) => (
                   <li className={s.productCart} key={item.id}>
                     <img 
-                      className={s.img} 
+                      className={s.imgCart} 
                       src={item.thumbnail} 
                       alt={item.title}>
 
