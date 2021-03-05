@@ -15,7 +15,6 @@ function Catalogue({ products, addToCart, error }) {
         <div>
           <h5 className="notFound">Ops!!! Product not found!</h5>
           <h5 className="notFound">Search again!</h5>
-          <img ></img>
         </div>
       ) : (
         <div className={s.catalogue}>

@@ -1,4 +1,5 @@
 .searchBar {
+    display: flex;
     background-color: #FFF159;   
     color: #736c28; 
     text-align: center;
@@ -40,6 +41,7 @@
 }
 
 .form {
+    display: flex;
     overflow: hidden;
     padding: 1rem;
     display: flex;

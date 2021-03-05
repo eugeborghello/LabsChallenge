@@ -23,10 +23,13 @@ function Features() {
  
   // Pagination ----------------------------------------->
   const [currentPage, setCurrentPage] = useState(1);
-  const [productsPerPage] = useState(4);
+  const [productsPerPage] = useState(30);
 // Get current product ---------------------------------->
+//                30       =  1          *    30
   const indexOfLastProduct = currentPage * productsPerPage;
+//                 5       =  35                -      30
   const indexOfFirsProduct = indexOfLastProduct - productsPerPage;
+//              (5, 30)          
   const currentProducts = products.slice(
     indexOfFirsProduct,
     indexOfLastProduct
@@ -113,8 +116,10 @@ function Features() {
 
 
   return (
-    <div className={s.container}>
-      <div>
+    <div 
+    //className={s.container}
+    >
+      <div className={s.searchBar}>
         <SearchBar onSearch={onSearch} />
       </div>
       
@@ -128,9 +133,8 @@ function Features() {
             input={input}
           />
         </div>
-        
-        <div className={s.content}>
-          <div className={s.main}>
+
+        <div className={s.pagination}>
             <Pagination
               productsPerPage={productsPerPage}
               totalProducts={products.length}
@@ -138,15 +142,19 @@ function Features() {
               key={"#"}
               
             />
+          </div>
+        
+        <div className={s.content}>
           
+        <div className={s.catalogue}>
             <Catalogue
               products={currentProducts}
               addToCart={addToCart}
               error={error}
             />
-          
+          </div>           
 
-          </div>
+          
 
           <div className={s.cart}>
             <Cart cartItems={cartItems} removeFromCart={removeFromCart} />

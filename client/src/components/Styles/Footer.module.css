@@ -17,8 +17,10 @@
   .usedTechnologies {
     display: flex;
     align-items: center;
+    justify-content: space-between;
     width: 60rem;
     padding-left: 2rem;
+    width: 75%;
   }
 
   .list {
@@ -41,6 +43,7 @@
   .container1 {
     flex-direction: column;
     width: 30rem;
+    width: 25%;
   }
 
   .infoDevs {
