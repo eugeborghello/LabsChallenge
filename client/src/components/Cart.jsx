@@ -8,7 +8,7 @@ const Cart = ({ cartItems, removeFromCart }) => {
           {cartItems.length === 0 ? (
             <div>Cart is empty</div>
           ) : (
-            <div>Your cart have {cartItems.length} different items !</div>
+            <div>Cart have {cartItems.length} different items !</div>
           )}
         </div>
         <div>
