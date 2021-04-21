@@ -6,9 +6,10 @@ Vamos a usar la API pública de **Mercado Libre**. De ella vamos a extraer publi
 
 <h1 align="center">
   <img width="400px" src="client/src/assets/Home.PNG" alt="home" />
-  <img width="400px" src="client/src/assets/labsVideo.mp4" alt="video" />
-  
+  <img width="400px" src="client/src/assets/producto.PNG" alt="producto" />
 </h1>
+
+Click <a href="client/src/assets/labsVideo.mp4" alt="video"> 🔔HERE🔔 to download video </a>
 
 
 # Back-End ➿
