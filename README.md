@@ -5,7 +5,7 @@ El objetivo del challenge es construir un Front-End y un Back-End que interactue
 Vamos a usar la API pública de **Mercado Libre**. De ella vamos a extraer publicaciones que luego vamos a guardar en nuestro propio back-end usando un caché. Para el Fron-end vamos a desarrollar una serie de Componentes de React para poder mostrar e interactuar con las publicaciones antes mencionadas.
 
 <h1 align="center">
-  <img width="400px" src="labsVideo"/ alt="video" />
+  <iframe src="https://giphy.com/embed/GLazAwP7q1fPvuLSUa" width="480" height="260" frameBorder="0" class="giphy-embed" allowFullScreen></iframe><p><a href="https://giphy.com/gifs/GLazAwP7q1fPvuLSUa">via GIPHY</a></p>
   </h1>
 
 
