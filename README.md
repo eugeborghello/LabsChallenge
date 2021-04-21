@@ -6,7 +6,7 @@ Vamos a usar la API pública de **Mercado Libre**. De ella vamos a extraer publi
 
 <h1 align="center">
   <img width="400px" src="client/src/assets/Home" alt="home" />
-  </h1>
+</h1>
 
 
 # Back-End ➿
