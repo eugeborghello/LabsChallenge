@@ -11,8 +11,8 @@ Vamos a usar la API pública de **Mercado Libre**. De ella vamos a extraer publi
 
 <br>
 
-Click <a href="client/src/assets/labsVideo.mp4" alt="video"> 🔔HERE🔔 to download video </a>
-
+Click <a href="client/src/assets/labsVideo.mp4" alt="video"> 🔔HERE🔔 </a> to download video 
+<br>
 
 # Back-End ➿
 
